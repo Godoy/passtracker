@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20160319130410) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.integer  "role",                   default: 0
+    t.string   "name"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end
