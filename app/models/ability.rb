@@ -5,7 +5,7 @@ class Ability
     can :read, :all
     if user && user.admin?
       can :access, :rails_admin       # only allow admin users to access Rails Admin
-      #can :dashboard                  # allow access to dashboard
+      # can :dashboard                  # allow access to dashboard
       can :manage, :all
       # if user.role? :superadmin
       #   can :manage, :all             # allow superadmins to do anything
