@@ -1,2 +1,25 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<form>
+  <input id="search" type="search" name="search" placeholder="Search" class="">
+</form>
+
+<table class="table table-striped" id="table-credentials">
+<thead>
+<tr>
+  <th>&nbsp;</th>
+  <th>Name</th>
+  <th>Project</th>
+  <th>Client</th>
+</tr>
+</thead>
+<tbody>
+<% @credentials.each do |credential| %>
+  <tr>
+    <td></td>
+    <td><%= credential.name %></td>
+    <td><%= credential.project.name %></td>
+    <td><%= credential.client.name %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
